@@ -173,26 +173,26 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # LOGGING_CONFIG = None
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        # "console": {
-        #     "class": "logging.FileHandler",
-        #     "level": "DEBUG",
-        # },
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'D:/TrackLive Backend Django/djangorest/debug.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            # "handlers": ["console", "file"],
-            "handlers": ["file"],
-            "level": "INFO",
-            'propagate': True,
-        },
-    },
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         # "console": {
+#         #     "class": "logging.FileHandler",
+#         #     "level": "DEBUG",
+#         # },
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': 'D:/TrackLive Backend Django/djangorest/debug.log',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             # "handlers": ["console", "file"],
+#             "handlers": ["file"],
+#             "level": "INFO",
+#             'propagate': True,
+#         },
+#     },
+# }
