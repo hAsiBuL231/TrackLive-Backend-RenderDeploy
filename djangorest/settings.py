@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wk%uf!=gu6g4^+=ud%w5*oavqvn4jqm$1z_tl8j7dzw&_y(gu0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', '*', '192.168.43.245']
+ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', '*', 'https://tracklive-backend-renderdeploy.onrender.com', 'localhost']
 
 
 # Application definition
@@ -93,9 +93,9 @@ DATABASES = {
 }
 
 # for PostgreSQL Database in render
-DATABASES["default"] = dj_database_url.parse("postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a.oregon-postgres.render.com/django_tracklive_database")
+DATABASES["default"] = dj_database_url.parse("postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a/django_tracklive_database")
 
-# postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a.oregon-postgres.render.com/django_tracklive_database
+# postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a/django_tracklive_database
 
 # DATABASES = {
 #     'default': {
