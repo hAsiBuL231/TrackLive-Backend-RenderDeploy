@@ -1,0 +1,86 @@
+python3 -m venv env
+
+###############################################
+env\Scripts\activate
+
+deactivate
+###############################################   woprk in venv ##############
+
+pip install djangorestframework
+
+django-admin startproject tutorial
+
+cd djangorest
+django-admin startapp quickstart
+
+###############################################   backup and restore
+python manage.py dumpdata > backup.json
+python manage.py loaddata backup.json
+###############################################
+
+
+python manage.py makemigrations locations
+python manage.py makemigrations
+python manage.py migrate
+python manage.py showmigrations
+python manage.py migrate --run-syncdb
+
+python manage.py createsuperuser --username admin --email admin@example.com
+
+
+###############################################
+pip install -r requirements.txt
+python -m pip install -r requirements.txt 
+###############################################
+cd djangorest
+python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
+
+
+
+###############################################
+MYSQL:             cls     \! cls
+MYSQL -u root -phasibul1516
+
+CREATE DATABASE IF NOT EXISTS track_live;
+show databases;
+
+
+MYSQL -u root -phasibul1516
+use track_live;
+show tables;
+
+
+SELECT * FROM locations_locationmodel;
+SELECT * FROM locations_historicallocationmodel;
+
+DELETE FROM locations_historicallocationmodel;
+
+DELETE FROM locations_locationmodel WHERE taker='Hasibul';
+DELETE FROM locations_historicallocationmodel WHERE taker='Hasibul';
+DELETE FROM locations_historicallocationmodel WHERE taker='555';
+
+
+drop table test_random;
+
+###############################################
+
+
+
+
+
+
+
+
+###############################################    IF table is giving problem:
+1. Drop tables (you already did).
+2. Comment-out the model in `models.py`.
+3. And ..
+    python manage.py makemigrations
+    python manage.py migrate --fake
+4. Comment-in your model in `models.py`.
+5. Go to step 3. **BUT** this time without `--fake`.
+###############################################
+
+
+
