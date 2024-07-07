@@ -41,7 +41,6 @@ router.register(r'soshistory', SOSHistoryViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('authentication.urls')),
-    path('test/', include('Test.urls')),
     path('image/', include('images.urls')),
 
     path('', include(router.urls)),  # Include the router's URL patterns for the notes app

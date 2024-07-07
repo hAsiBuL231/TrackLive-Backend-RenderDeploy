@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'api',
     'authentication',
     'locations',
-    'Test',
     'images',
     "rest_framework",
     "rest_framework.authtoken",
@@ -79,7 +78,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djangorest.wsgi.application'
-ASGI_APPLICATION = 'djangorest.asgi.application' 
 
 
 # Database
@@ -95,6 +93,7 @@ DATABASES = {
 # for PostgreSQL Database in render
 DATABASES["default"] = dj_database_url.parse("postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a/django_tracklive_database")
 
+# postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a.oregon-postgres.render.com/django_tracklive_database
 # postgresql://django_tracklive_database_user:GtzUCBVAa4yn0gW7e4FbYc9mzF7uw9M2@dpg-cq4tedtds78s73cpjvs0-a/django_tracklive_database
 
 # DATABASES = {
@@ -184,7 +183,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #         'file': {
 #             'level': 'DEBUG',
 #             'class': 'logging.FileHandler',
-#             'filename': 'D:/TrackLive Backend Django/djangorest/debug.log',
+#             'filename': 'D:/TrackLive Backend RenderDeploy/debug.log',
 #         },
 #     },
 #     'loggers': {
